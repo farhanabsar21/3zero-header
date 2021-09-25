@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.navigation-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header-section nav {
+  padding: 3rem 0;
+  height: 25vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-section nav .logo-container img {
+  height: 5rem;
+}
+
+.header-section nav .menu-container ul {
+  list-style-type: none;
+}
+
+.header-section nav .menu-container ul li {
+  display: inline;
+  font-size: 18px;
+}
+
+.header-section nav .menu-container ul li a {
+  text-decoration: none;
+  margin-left: 2.5rem;
+  color: #46A4A3;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header-section nav .menu-container ul li a:hover {
+  color: #EF9740;
+}
+
+.header-section nav .menu-container ul li button {
+  outline: none;
+  border: none;
+  background-color: #46A4A3;
+  padding: 10px 20px;
+  color: #ffffff;
+  margin-left: 20px;
+  text-transform: capitalize;
+}
+
+.header-section nav .menu-container ul .profile-data {
+  margin-left: 1rem;
+}
+
+.header-section nav .menu-container ul .profile-data .profile-image {
+  display: inline;
+}
+
+.header-section nav .menu-container ul .profile-data .profile-image img {
+  height: 40px;
+  width: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #46A4A3;
+}
+
+.header-section nav .menu-container ul .profile-data .profile-image i {
+  color: #46A4A3;
+  cursor: pointer;
+}
+
+.header-section nav .profile-routes {
+  display: none;
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  right: 0;
+  bottom: -90%;
+  padding: 10px 25px 10px 5px;
+}
+
+.header-section nav .profile-routes ul {
+  list-style-type: none;
+}
+
+.header-section nav .profile-routes ul li {
+  display: block;
+  padding: 12px 5px;
+  border-bottom: 1px solid #cccccc;
+  text-transform: capitalize;
+}
+
+.header-section nav .profile-routes ul li:last-child {
+  border: 0;
+}
+
+.header-section nav .profile-routes ul li a {
+  text-decoration: none;
+  color: #46A4A3;
+}
+/*# sourceMappingURL=header.css.map */

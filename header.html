@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="header-section">
+        <!-- navigation -->
+        <nav class="navigation-container position-relative">
+            <div class="logo-container">
+                <img src="./assets/logo.svg" alt="3zero-club-logo">
+            </div>
+            <div class="menu-container">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Events</a></li>
+                    <li><a href="/">Register</a></li>
+                    <li><button>3zero global centre</button></li>
+                    <li class="profile-data position-relative">
+                        <div class="profile-image">
+                            <img src="./assets/person.jpg" alt="person">
+                            <span><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- profile route -->
+            <div class="profile-routes">
+                <ul>
+                    <li><a href="/">club profile</a></li>
+                    <li><a href="/">bulletin board</a></li>
+                    <li><a href="/">help &amp; support</a></li>
+                    <li><a href="/">sign out</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <script>
+        const arrowDown = document.querySelector(".profile-image span i");
+        const profileRoutesMenu = document.querySelector(".profile-routes");
+        arrowDown.addEventListener("click", e => {
+            e.preventDefault()
+            if(profileRoutesMenu.style.display === "block") {
+                profileRoutesMenu.style.display = "none"
+            }else{
+                profileRoutesMenu.style.display = "block" 
+            }
+        })
+    </script>
+</body>
+</html>
